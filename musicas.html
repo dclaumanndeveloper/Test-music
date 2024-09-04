@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teste New Music</title>
+
+    <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.2.96/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/lib/nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <section class="sidebar-menu bg-primary-color">
+        <div class="logo">
+            <h4>New Music</h4>
+        </div>
+
+        <ul class="navigation">
+            <li class="title">Menu</li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="musicas.html">Musicas</a></li>
+        </ul>
+    </section>
+
+    <header class="header">
+        <div class="main-header-container">
+            <div class="hamburger-menu">
+                <button type="button"><i class="mdi mdi-menu"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="row">
+            <div class="col-12">
+                <div class="page-title-box">
+                    <h4 class="page-title">Home</h4>
+                    <div class="d-flex" style="align-content: initial;">
+                        <select class="nice-select" onChange="filtrarGenero()" id="genero">
+                            <option value="todos">Todos</option>
+                            <option value="sertanejo">Sertanejo</option>
+                            <option value="rock">Rock</option>
+                            <option value="pagode">Pagode</option>
+                            <option value="funk">Funk</option>
+                        </select>
+                        <input style="padding-left: 10%;" type="text" id="filtro"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="content-candidates">
+            <div class="container">
+                <div class="tab-content add-content-year" id="myTabContent">
+                    <div class="tab-pane fade show active" id="musics" role="tabpanel" tabindex="0">
+                        <table class="table text-center">
+                            <thead class="table-light">
+                                <tr>
+                                    <th scope="col">Titulo</th>
+                                    <th scope="col">Artista</th>
+                                    <th scope="col">Genero</th>
+                                    <th scope="col">Data Lançamento</th>
+                                </tr>
+                            </thead>
+                            <tbody id="lista-musicas">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    
+
+    
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/lib/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+/*========= Auth modals ==========*/
+.auth-modals .modal-body {
+    padding: 40px 55px;
+}
+
+.auth-modals .modal-title {
+    display: flex;
+    justify-content: center;
+}
+
+.auth-modals .modal-title h5 {
+    font-size: 20px;
+    color: #4184FF;
+    border-bottom: 1px solid #4184FF;
+}
