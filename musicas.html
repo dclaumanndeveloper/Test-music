@@ -22,7 +22,7 @@
         <ul class="navigation">
             <li class="title">Menu</li>
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link active" href="musicas.html">Musicas</a></li>
+            <li class="nav-item"><a class="nav-link active" href="musicas.html">Músicas</a></li>
         </ul>
     </section>
 
@@ -38,15 +38,16 @@
         <div class="row">
             <div class="col-12">
                 <div class="page-title-box">
-                    <h4 class="page-title">Home</h4>
-                    <div class="d-flex" style="align-content: initial;">
-                        <select class="nice-select" onChange="filtrarGenero()" id="genero">
+                    <h4 class="page-title">Músicas</h4>
+                    <div class="d-flex" style="width: 50%;">
+                        <select class="nice-select" style="width: 30%;"  onChange="filtrarGenero()" id="genero">
                             <option value="todos">Todos</option>
                             <option value="sertanejo">Sertanejo</option>
                             <option value="rock">Rock</option>
                             <option value="pagode">Pagode</option>
                             <option value="funk">Funk</option>
                         </select>
+                        <div style="width: 5%;"></div>
                         <input style="padding-left: 10%;" type="text" id="filtro"/>
                     </div>
                 </div>
@@ -62,7 +63,7 @@
                                 <tr>
                                     <th scope="col">Titulo</th>
                                     <th scope="col">Artista</th>
-                                    <th scope="col">Genero</th>
+                                    <th scope="col">Gênero</th>
                                     <th scope="col">Data Lançamento</th>
                                 </tr>
                             </thead>
